@@ -1,3 +1,5 @@
+'''
+
 import streamlit as st
 from PIL import Image
 from transformers import BlipProcessor, BlipForConditionalGeneration
@@ -50,4 +52,7 @@ if uploaded_image is not None:
         
         # Display translated caption
         col2.success("Legenda Gerada: " + translated_caption)
-        
+
+'''
+import torch
+print(torch.__version__)
