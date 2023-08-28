@@ -8,4 +8,4 @@ streamlit-analytics
 streamlit-extras
 transformers==4.30.2
 translate==3.6.1
-torch==2.0.1+cpu
+torch==2.0.1
