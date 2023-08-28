@@ -2,4 +2,4 @@ name: myenv
 channels:
   - conda-forge
 dependencies:
-  - pytorch-cpu
+  - - pytorch==1.6.0+cpuonly
