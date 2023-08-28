@@ -3,12 +3,17 @@ from PIL import Image
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from translate import Translator
 
-# Load the pre-trained model and processor
-processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
-model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large")
-
 # Set page layout to wide for better responsiveness
 st.set_page_config(layout="wide")
+
+# Load the pre-trained model and processor
+@st.cache_data
+def load_model_and_processor():
+    processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
+    model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large")
+    return processor, model
+
+processor, model = load_model_and_processor()
 
 # Create columns for the image and captions
 col1, col2, col3 = st.columns([1, 4, 1])
