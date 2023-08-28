@@ -1,4 +1,4 @@
-# Streamlit legendas automáticas para imagens
+# App de legendas automáticas para imagens com streamlit
  
 - Repositório para aplicação web de legendar imagens usando [Streamlit](https://www.streamlit.io)
 
