@@ -1,0 +1,5 @@
+name: myenv
+channels:
+  - conda-forge
+dependencies:
+  - torch==2.0.1+cpu
