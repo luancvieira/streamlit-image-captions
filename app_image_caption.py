@@ -50,3 +50,4 @@ if uploaded_image is not None:
         
         # Display translated caption
         col2.success("Legenda Gerada: " + translated_caption)
+        
